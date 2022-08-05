@@ -1,11 +1,15 @@
-import Carousel from "../Components/Carousel/carousel";
+import Bio from "../Components/Bio";
+
 import ContactForm from "../Components/ContactForm";
 import Header from "../Components/Header/Header";
 
 function Homepage() {
-    <div>
+    return(
+
+        <div>
         <Header/>
-        <Carousel/>
+        <Bio/>
         <ContactForm/>
     </div>
+        )
 }

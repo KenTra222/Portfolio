@@ -3,7 +3,10 @@ import React from 'react'
 const Header = () => {
   return (
     <header>
-      Header
+      <img src='' alt=''/>
+      <div>
+        hamburger
+      </div>
     </header>
   )
 }
