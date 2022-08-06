@@ -4,7 +4,7 @@ import React from "react"
 import Link from 'next/link'
 
 //stylesheet for application
-import styles from '../styles/Home.module.scss'
+import styles from '../styles/LandingPage.module.scss'
 
 // markup for the landing page
 function LandingPage(){
