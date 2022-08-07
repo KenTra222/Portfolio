@@ -11,9 +11,14 @@ function LandingPage(){
   return(
 
     <div className={styles.landingPageContainer}>
-    <h1 className={styles.title}>Kentravious V. Colson</h1>
-    <span id="jobTitle"><h3>Creative Artist x Web Deisigner</h3></span>
+
+    <h1 className={styles.title}>Kentravious  
+    V.
+     Colson</h1>
+    <h3 className={styles.careerRole}>Web Designer <br/> Frontend developer</h3>
     <div className={styles.btnContainter}>
+  
+  {/*links for navigation*/}
   <Link href='./contact'>
   <button className={styles.btn}>contact</button>
   </Link> 

@@ -1,9 +1,10 @@
-import React from 'react'
 
-const Carousel = () => {
+
+function Carousel() {
   return (
     <div>
-      carousel</div>
+      this is a carousel
+      </div>
   )
 }
 
