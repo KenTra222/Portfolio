@@ -19,7 +19,7 @@ function Homepage() {
         <div>
             <Header/>
             <div className={styles.homepageLayout}>
-
+             {/*hero section*/}
            <section className={styles.heroSection}>
             
         
@@ -33,20 +33,22 @@ function Homepage() {
             <Button link='/about' text='see resume'/>   
 
             </div>
-
+            {/*services section*/}
             <section>
             <h2>What I Offer</h2>
              <Carousel service='design' description='design'/>
              <Carousel service='development' description='development'/>
              <Carousel service='design' description='design'/>
             </section>
-
+            
+            {/*project section*/}
             <section>
                 <h2>Projects I've done</h2>
                 <ProjectBtn/>
                 <Card title='card' description='description'/>
             </section>
 
+            {/*contact section*/}
             <section>
                 <h2>get in contact</h2>
                 <ContactForm/>
