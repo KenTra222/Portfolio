@@ -30,27 +30,26 @@ function Homepage() {
             </div>
            </section>
             <BioDetails/>
-            <Button link='/about' text='see resume'/>   
+            <Button link='/about' text='see resume'/>  
+            <hr className={styles.line_break}/> 
 
             </div>
             {/*services section*/}
-            <section>
-            <h2>What I Offer</h2>
-             <Carousel service='design' description='design'/>
-             <Carousel service='development' description='development'/>
-             <Carousel service='design' description='design'/>
+            <section className={styles.serviceSection}>
+            <h2 className={styles.serviceTitle}>What I Offer</h2>
+             
             </section>
             
             {/*project section*/}
-            <section>
-                <h2>Projects I've done</h2>
+            <section className={styles.projectSection}>
+                <h2  className={styles.projectTitle}>Projects I've done</h2>
                 <ProjectBtn/>
                 <Card title='card' description='description'/>
             </section>
 
             {/*contact section*/}
-            <section>
-                <h2>get in contact</h2>
+            <section className={styles.contactSection}>
+                <h2  className={styles.contactTitle}>get in contact</h2>
                 <ContactForm/>
             </section>
 

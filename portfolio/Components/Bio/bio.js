@@ -3,7 +3,7 @@ import styles from './Bio.module.scss'
 function BioDetails(){
     return(
         <div className={styles.bioSection}>
-            <h2 className={styles.bioHeading}>Man behind the machine</h2>
+            <h2 className={styles.bioHeading}>About Myself</h2>
             <img className={styles.bioImage} src='/sp-seriouspose1.jpg' alt=''/>
             <p>
             <span>Kentravious Colson </span> 

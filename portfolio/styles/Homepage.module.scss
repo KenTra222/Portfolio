@@ -6,7 +6,10 @@
 }
 
 .heroSection{
+    margin-top: 0;
+    
     padding-left: 1.25em;
+    padding-right: 1.25em;
     min-width: 100%;
     
     color: #E507AC;
@@ -15,6 +18,7 @@
     justify-content: center;
     align-items: center;
     gap: 2px;
+    text-align: center;
 
     background: url(https://i.gifer.com/Sr86.gif);
     background-repeat: no-repeat;
@@ -24,6 +28,7 @@
 .heroTitle{
     margin-bottom: 0;
     font-size: 2em;
+    
 }
 
 .heroDetails{
@@ -38,4 +43,15 @@
     margin-bottom: 0;
 }
 
+.serviceTitle{
+    color: #E507AC;
+}
+
+.projectTitle{
+    color: #E507AC;
+}
+
+.contactTitle{
+    color: #E507AC;
+}
 
