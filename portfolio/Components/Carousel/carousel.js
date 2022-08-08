@@ -1,10 +1,11 @@
 
 
-function Carousel() {
+function Carousel(props) {
   return (
     <div>
-      this is a carousel
-      </div>
+      <p>{props.service}</p>
+      <p>{props.description}</p>
+    </div>
   )
 }
 

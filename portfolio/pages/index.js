@@ -5,6 +5,7 @@ import Link from 'next/link'
 
 //stylesheet for application
 import styles from '../styles/LandingPage.module.scss'
+import Button from "../Components/buttons/button"
 
 // markup for the landing page
 function LandingPage(){
@@ -19,12 +20,8 @@ function LandingPage(){
     <div className={styles.btnContainter}>
   
   {/*links for navigation*/}
-  <Link href='./contact'>
-  <button className={styles.btn}>contact</button>
-  </Link> 
-  <Link href='./homePage'>
-    <button  className={styles.btn}>homepage</button>
-  </Link> 
+  <Button link='/contact' text='contact'/>
+  <Button link='/homePage' text='see more'/>
     </div>
   </div>
     )

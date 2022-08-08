@@ -1,14 +1,22 @@
 import React from 'react'
+import styles from './projectBtn.module.scss'
+
+//icon
+import{BsFillBrushFill, BsFillEnvelopeFill, BsBraces, BsCardImage} from "react-icons/bs";
+
 
 const projectBtn = () => {
   return (
     <div>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
+        <button className={styles.btnIcon}>all</button>
+        <button><BsFillBrushFill/></button>
+        <button><BsFillEnvelopeFill/></button>
+        <button><BsBraces/></button>
+        <button><BsCardImage/></button>
     </div>
   )
 }
+
+
 
 export default projectBtn

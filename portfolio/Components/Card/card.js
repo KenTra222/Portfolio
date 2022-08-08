@@ -1,11 +1,11 @@
 import styles from './card.module.scss'
 
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div>
-        <p className='title'></p>
-        <p className='description'></p>
+        <p className='title'>{props.title}</p>
+        <p className='description'>{props.description}</p>
     </div>
   )
 }
