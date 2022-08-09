@@ -37,7 +37,7 @@ function Homepage() {
             {/*services section*/}
             <section className={styles.serviceSection}>
             <h2 className={styles.serviceTitle}>What I Offer</h2>
-             
+             <Carousel/>
             </section>
             
             {/*project section*/}
