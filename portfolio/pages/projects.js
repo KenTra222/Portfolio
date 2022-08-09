@@ -1,10 +1,12 @@
 import Header from "../Components/Header/Header";
+import ProjectBtn from "../Components/ProjectBtn/projectBtn";
 
 function Projects(){
     return(
         <div>
             <Header/>
-            this is the project page
+            <h2>Projects</h2>
+            <ProjectBtn/>
         </div>
     )
 }

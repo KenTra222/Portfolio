@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 1em;
 }
 
 .heroSection{
@@ -45,13 +46,21 @@
 
 .serviceTitle{
     color: #E507AC;
+    text-align: center;
+}
+
+.serviceSection{
+    padding-left: 1.25em;
+    padding-right: 1.25em;
 }
 
 .projectTitle{
     color: #E507AC;
+    text-align: center;
 }
 
 .contactTitle{
     color: #E507AC;
+    text-align: center;
 }
 

@@ -23,7 +23,9 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
+      <Link href='/homePage'>
       <img src='/Logo2-removebg.png' alt='' className={styles.Logo}/>
+      </Link>
       
       <div className='burger_menu'>
         <div className={'burger_class'}></div>

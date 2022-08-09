@@ -1,4 +1,6 @@
-import React from 'react';
+
+import styles from './ContactForm.module.scss'
+
 import { useForm } from 'react-hook-form';
 
 export default function ContactForm() {
@@ -7,12 +9,12 @@ export default function ContactForm() {
   console.log(errors);
   
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <input type="text" placeholder="Name" {...register("Name", {required: true, maxLength: 80})} />
-      <input type="text" placeholder="Email" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} />
-      <input type="text" placeholder="message" {...register("message", {})} />
+    <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+      <input className={styles.input} type="text" placeholder="Name" {...register("Name", {required: true, maxLength: 80})} />
+      <input className={styles.input} type="text" placeholder="Email" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} />
+      <textarea className={styles.messageBox} placeholder='Message' {...register("Message", {})} />
 
-      <input type="submit" />
+      <input className={styles.submitBtn} type="submit" />
     </form>
   );
 }

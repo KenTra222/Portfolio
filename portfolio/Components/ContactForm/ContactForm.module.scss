@@ -1,0 +1,46 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+}
+
+.input{
+    margin-bottom: 1em;
+    border-radius: 8px;
+    border: none;
+    height: 2.25rem;
+    padding-left: 1em;
+}
+
+.messageBox{
+    height: 4em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    border: none;
+    height: 9.6rem;
+    padding-left: 1em;
+    padding-top: .7em;
+}
+
+.input::placeholder,
+.messageBox::placeholder{
+    font-weight: bold;
+    opacity: .5;
+    color: #E507AC;
+}
+
+.submitBtn{
+    color: white;
+    height: 2.25rem;
+    background-color: #E507AC;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 1em;
+}
+
+.submitBtn:hover{
+    color: #E507AC;
+    background-color: white;
+}

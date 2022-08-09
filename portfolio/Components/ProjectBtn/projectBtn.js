@@ -5,18 +5,18 @@ import styles from './projectBtn.module.scss'
 import{BsFillBrushFill, BsFillEnvelopeFill, BsBraces, BsCardImage} from "react-icons/bs";
 
 
-const projectBtn = () => {
+const ProjectBtn = () => {
   return (
-    <div>
+    <div className={styles.btnContainer}>
         <button className={styles.btnIcon}>all</button>
-        <button><BsFillBrushFill/></button>
-        <button><BsFillEnvelopeFill/></button>
-        <button><BsBraces/></button>
-        <button><BsCardImage/></button>
+        <button className={styles.btnIcon}><BsFillBrushFill/></button>
+        <button className={styles.btnIcon}><BsFillEnvelopeFill/></button>
+        <button className={styles.btnIcon}><BsBraces/></button>
+        <button className={styles.btnIcon}><BsCardImage/></button>
     </div>
   )
 }
 
 
 
-export default projectBtn
+export default ProjectBtn

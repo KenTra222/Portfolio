@@ -31,7 +31,7 @@ function Homepage() {
            </section>
             <BioDetails/>
             <Button link='/about' text='see resume'/>  
-            <hr className={styles.line_break}/> 
+            
 
             </div>
             {/*services section*/}
