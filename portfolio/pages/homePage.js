@@ -5,13 +5,13 @@ import Carousel from "../Components/Carousel/carousel"
 import Header from "../Components/Header/Header"
 import ProjectBtn from "../Components/ProjectBtn"
 import Card from "../Components/Card/card"
+import ContactForm from "../Components/ContactForm/ContactForm"
 
 //link import
 import Link from 'next/link'
 
 //stylesheet
 import styles from '../styles/Homepage.module.scss'
-import ContactForm from "../Components/ContactForm/ContactForm"
 
 function Homepage() {
     return(

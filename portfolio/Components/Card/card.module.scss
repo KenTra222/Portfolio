@@ -1,0 +1,21 @@
+.card{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        
+        margin: auto;
+}
+
+
+
+.cardDetails{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: antiquewhite;
+        width: 100%;
+        padding: 1em;
+        
+}

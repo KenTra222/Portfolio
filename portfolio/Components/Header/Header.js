@@ -3,37 +3,38 @@ import Link from 'next/link'
 //styles for the Header
 import styles from './Header.module.scss'
 
-const Header = () => {
-  //hambburger logic
-  const [burger_class, setBurgerClass] = useState("burger_bar unclicked")
-  const [menu_class, setMenuClass] = useState("menu hidden")
-  const [isMenuClicked, setIsMenuClicked] = useState(false)
 
-  //toggles menu
-  const updateMenu = () => {
-      if(isMenuClicked){
-        setBurgerClass('burger_bar clicked')
-        setMenuClass('menu visible')
-      } 
-      else {
-        setBurgerClass('burger_bar hidden')
-        setMenuClass('menu hidden')
-      }
-  }
+import { Twirl as Hamburger } from 'hamburger-react'
+
+const Header = () => {
+  
+  const [isOpen, setOpen] = useState(false)
 
   return (
     <header className={styles.header}>
       <Link href='/homePage'>
       <img src='/Logo2-removebg.png' alt='' className={styles.Logo}/>
       </Link>
-      
-      <div className='burger_menu'>
-        <div className={'burger_class'}></div>
-        <div className={'burger_class'}></div>
-        <div className={'burger_class'}></div>
-      </div>
 
-      <nav className={styles.menu }>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      
+      <Hamburger
+      className={styles.Hamburger}
+      color="#E507AC"
+      size={20}
+      onToggle={toggled => {
+        if (toggled) {
+           
+        } else {
+           // close a menu
+        }
+      }}/>
+
+      {/*<ul className={styles.menu}>
         <Link href='/homePage' >
          <a className={styles.link}>Home</a> 
         </Link>
@@ -46,7 +47,7 @@ const Header = () => {
         <Link href='/contact'>
         <a className={styles.link}>Contact</a> 
         </Link>
-     </nav>
+     </ul>*/}
     </header>
   )
 }
