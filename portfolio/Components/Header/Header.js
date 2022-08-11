@@ -3,40 +3,27 @@ import Link from 'next/link'
 //styles for the Header
 import styles from './Header.module.scss'
 
-
-import { Twirl as Hamburger } from 'hamburger-react'
-
 const Header = () => {
   
-  const [isOpen, setOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
+  const openMenu = () => (console.log('open menu'))
 
   return (
     <header className={styles.header}>
+
+      <nav className={styles.navBar}>
+
       <Link href='/homePage'>
-      <img src='/Logo2-removebg.png' alt='' className={styles.Logo}/>
-      </Link>
+      <img src='/Logo2-removebg.png' alt='' 
+      className={styles.Logo}/>
+      </Link> 
 
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      
-      <Hamburger
-      className={styles.Hamburger}
-      color="#E507AC"
-      size={20}
-      onToggle={toggled => {
-        if (toggled) {
-           
-        } else {
-           // close a menu
-        }
-      }}/>
-
-      {/*<ul className={styles.menu}>
+      <ul className={
+                    isOpen === false ? styles.menu :
+                     styles.menu+""+styles.active
+                    }>
         <Link href='/homePage' >
-         <a className={styles.link}>Home</a> 
+        <a className={styles.link}>Home</a> 
         </Link>
         <Link href='/about'>
         <a className={styles.link}>About</a> 
@@ -47,7 +34,19 @@ const Header = () => {
         <Link href='/contact'>
         <a className={styles.link}>Contact</a> 
         </Link>
-     </ul>*/}
+      </ul>
+
+       
+      <button className={isOpen === false ? 
+                                    styles.hamburger : styles.hamburger+' '+styles.active}
+                                    onClick={openMenu}>
+        <span className={styles.bar}></span>
+        <span className={styles.bar}></span>
+        <span className={styles.bar}></span>
+      </button>
+
+     
+      </nav>
     </header>
   )
 }
