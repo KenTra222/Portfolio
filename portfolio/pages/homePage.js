@@ -44,7 +44,13 @@ function Homepage() {
             <section className={styles.projectSection}>
                 <h2  className={styles.projectTitle}>Projects I've done</h2>
                 <ProjectBtn/>
-                <Card title='card' description='description'/>
+                <div className={styles.cardContainer}>
+
+                    <Card title='card' description='description'/>
+                    <Card title='card' description='description'/>
+                    <Card title='card' description='description'/>
+                </div>
+                
             </section>
 
             {/*contact section*/}
