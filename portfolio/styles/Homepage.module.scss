@@ -1,0 +1,66 @@
+.homepageLayout{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.heroSection{
+    margin-top: 0;
+    
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    min-width: 100%;
+    
+    color: #E507AC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    text-align: center;
+
+    background: url(https://i.gifer.com/Sr86.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heroTitle{
+    margin-bottom: 0;
+    font-size: 2em;
+    
+}
+
+.heroDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.heroRole{
+    margin-bottom: 0;
+}
+
+.serviceTitle{
+    color: #E507AC;
+    text-align: center;
+}
+
+.serviceSection{
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+}
+
+.projectTitle{
+    color: #E507AC;
+    text-align: center;
+}
+
+.contactTitle{
+    color: #E507AC;
+    text-align: center;
+}
+

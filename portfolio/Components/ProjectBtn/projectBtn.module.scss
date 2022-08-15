@@ -1,0 +1,19 @@
+.btnContainer{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 1em;
+}
+
+.btnIcon{
+    margin-right: .25em;
+    color: #fff;
+    background-color: #E507AC;
+    border: none;
+    padding: .50em;
+}
+
+.btnIcon:hover{
+    color: #E507AC;
+    background-color: #fff;
+}

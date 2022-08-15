@@ -3,8 +3,8 @@ import styles from './Bio.module.scss'
 function BioDetails(){
     return(
         <div className={styles.bioSection}>
-            <h2>Man behind the machine</h2>
-            <img src='' alt=''/>
+            <h2 className={styles.bioHeading}>About Myself</h2>
+            <img className={styles.bioImage} src='/sp-seriouspose1.jpg' alt='headshot'/>
             <p>
             <span>Kentravious Colson </span> 
              is a man of many talents but his best is his ability to learn and adapt to new challenges and gaining new experiences along the way.

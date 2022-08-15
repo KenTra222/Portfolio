@@ -6,38 +6,23 @@
   color: #fff;
   height: 100vh;
   background: url(../img/LandingPageBG.jpg);
-  background-color: #fff;
+  background-color: rgb(2, 1, 1);
   background-size: cover;
   background-repeat: no-repeat;
-
+  background-position: left;
+  padding: 1.25em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 .title{
   color: #E507AC;
+  
 }
 
-.btnContainter{
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: space-evenly;
 
-}
-.btn{
-  height: 2.7rem;
-  color: #E507AC;
-  border: 1px solid #E507AC;
-  border-radius: 8px;
-  background: none;
-  margin-bottom: 1.5rem;
-  padding: 10px 15px;
-}
 
-.btn:hover, .btn:focus{
-  background: #fff;
-  border: none;
-}
+
