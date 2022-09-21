@@ -10,6 +10,10 @@ export default function ContactForm() {
   
   return (
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+      <p className={styles.ContactMessage}>
+        Ready to solve a problem? please leave a message and I will gladly reach out withing 1-3 business days. 
+      </p>
+      <p>or reach me personally @ Kentraviousc@gmail.com</p>
       <input className={styles.input} type="text" placeholder="Name" {...register("Name", {required: true, maxLength: 80})} />
       <input className={styles.input} type="text" placeholder="Email" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} />
       <textarea className={styles.messageBox} placeholder='Message' {...register("Message", {})} />

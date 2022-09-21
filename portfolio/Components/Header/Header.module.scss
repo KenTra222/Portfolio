@@ -1,5 +1,5 @@
 .header{
-         border-bottom: 1px solid #E507AC;
+      
     
 
     .navBar{
@@ -11,7 +11,7 @@
         }
 
     .Logo{
-        width: 5em;
+        width: 7rem;
         height: auto;
         z-index: 3;
     }
@@ -19,7 +19,7 @@
     .navmenu{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
     }
 
@@ -60,6 +60,7 @@
       
         .Logo{
             align-self: flex-start;
+            width: 3.5rem;
         }
 
         .navmenu {

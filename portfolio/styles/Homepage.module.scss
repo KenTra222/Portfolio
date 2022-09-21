@@ -7,7 +7,7 @@
 }
 
 .heroSection{
-    margin-top: 0;
+   
     
     padding-left: 1.25em;
     padding-right: 1.25em;
@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2px;
+  
     text-align: center;
 
     background: url(https://i.gifer.com/Sr86.gif);
@@ -69,3 +69,35 @@
     text-align: center;
 }
 
+@media (min-width:600px) {
+    .heroSection{
+        color: #E507AC;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2em;
+        background: url(https://i.gifer.com/OEpv.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .heroTitle{
+            font-size: 4.5rem;
+            justify-content: space-between;
+        }
+
+        .heroDetails{
+            padding-bottom: 6em;
+
+             h3{
+                font-size: 2.75rem;
+            }
+             p {
+                font-size: 1.75;
+                
+            }
+        }
+    }
+}

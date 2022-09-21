@@ -4,6 +4,10 @@
     width: 100%;
     padding-left: 1.25em;
     padding-right: 1.25em;
+
+       p{
+        color: white;
+       }
 }
 
 .input{
@@ -43,4 +47,16 @@
 .submitBtn:hover{
     color: #E507AC;
     background-color: white;
+}
+
+@media (min-width:600px) {
+    .form{
+        display: flex;
+        width: 100%;
+       
+        flex-wrap: wrap;
+
+       
+
+    }   
 }
