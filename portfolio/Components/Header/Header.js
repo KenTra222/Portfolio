@@ -6,8 +6,7 @@ import styles from './Header.module.scss'
 const Header = () => {
   
   const [isOpen, setIsOpen] = useState(false)
-  const openMenu = () => (console.log('open menu'))
-
+  const openMenu = () => setIsOpen(!isOpen)
   return (
     <header className={styles.header}>
 
@@ -19,21 +18,29 @@ const Header = () => {
       </Link> 
 
       <ul className={
-                    isOpen === false ? styles.menu :
-                     styles.menu+""+styles.active
+                    isOpen === false ? styles.navmenu :
+                     styles.navmenu+""+styles.active
                     }>
-        <Link href='/homePage' >
-        <a className={styles.link}>Home</a> 
-        </Link>
-        <Link href='/about'>
-        <a className={styles.link}>About</a> 
-        </Link>
-        <Link href='/projects'>
-        <a className={styles.link}>Projects</a> 
-        </Link>
-        <Link href='/contact'>
-        <a className={styles.link}>Contact</a> 
-        </Link>
+        <li className={styles.navitem}>
+          <Link href='/homePage' >
+          <a className={styles.link}>Home</a> 
+          </Link>
+        </li>
+        <li className={styles.navitem}>
+          <Link href='/about'>
+          <a className={styles.link}>About</a> 
+          </Link>
+        </li>
+        <li className={styles.navitem}>
+          <Link href='/projects'>
+          <a className={styles.link}>Projects</a> 
+          </Link>
+        </li>
+        <li className={styles.navitem}>  
+          <Link href='/contact'>
+          <a className={styles.link}>Contact</a> 
+          </Link>
+        </li>
       </ul>
 
        

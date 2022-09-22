@@ -1,6 +1,6 @@
 import styles from './serviceCard.module.scss'
 
-function ServiceCard(props){
+function ProjectCard(props){
     return(
         <div className={styles.cardContainer}>
              <h3 className={styles.serviceName}>{props.service}</h3>
@@ -9,4 +9,4 @@ function ServiceCard(props){
     )
 }
 
-export default ServiceCard
+export default ProjectCard

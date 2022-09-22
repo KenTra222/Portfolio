@@ -24,25 +24,25 @@ function Carousel(props) {
     >
       <SwiperSlide>
        <ServiceCard 
-          service="UI Design" 
-          description="Strategizing product development by conducting market research on similar applications to create layout for unique selling points and determining areas for continuous improvement"/>
+          service="Grassfed" 
+          description="An organic pet food website created to display my frontend skills"/>
       </SwiperSlide>
 
       <SwiperSlide>
         <ServiceCard 
-          service="Landing Page development" 
-          description="standalone web page that the visitors reach after clicking on online ads, a link in email, or posts you have on social media to convert site visitors into leads or sales"/>
+          service="Cadet Landing Page" 
+          description="Landing Page to display UI fundamentals and design techniques in figma that can be transfered and handed off to a developer"/>
       </SwiperSlide>
 
       <SwiperSlide>
         <ServiceCard 
-          service="Web Development" 
+          service="Boxed Landing page" 
           description="Create and maintain websites performance and capacity, giving your product or business an onling homebase for operations to give you time to handle none technical tasks."/>
       </SwiperSlide>
 
       <SwiperSlide>
         <ServiceCard 
-          service="Content Management" 
+          service="Gigibite" 
           description="collecting, delivering, retrieving, governance and overall management of information in any format on your site or app. All one email away"/>
       </SwiperSlide>
      

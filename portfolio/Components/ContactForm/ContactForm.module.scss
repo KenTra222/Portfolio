@@ -1,9 +1,19 @@
 .form{
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
     width: 100%;
     padding-left: 1.25em;
     padding-right: 1.25em;
+
+       p{
+        color: white;
+       }
+
+       .inputFields{
+        display: flex;
+        flex-direction: column;
+       }
 }
 
 .input{
@@ -43,4 +53,32 @@
 .submitBtn:hover{
     color: #E507AC;
     background-color: white;
+}
+
+.contactImage{
+    width: 20px;
+    height: 20px;
+}
+
+@media (min-width:800px) {
+    .form{
+        display: flex;
+        width: 100%;
+       flex-direction: row;
+       align-items: flex-start;
+       justify-content: space-around;
+
+       p{
+        width: 45%;
+
+        span{
+            margin-top: 3em;
+        }
+       }
+
+       .inputFields{
+        width: 45%;
+       }
+
+    }   
 }
