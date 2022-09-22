@@ -25,10 +25,11 @@ function Homepage() {
            <section className={styles.heroSection}>
             
         
-            <h1 className={styles.heroTitle}>Kentravious V.  Colson</h1>
+            <h1 className={styles.heroTitle}>Kentravious V.  Colson<hr/></h1>
             <div className={styles.heroDetails}>
             <h3 className={styles.heroRole}>Web Designer x Frontend Dev</h3>
-            <p className={styles.heroTagline}>Conceptualizing creative designs for small and local businesses</p>
+           
+            <p className={styles.heroTagline}>Conceptualizing creative designs for small and local businesses by researching, planning, designing and building with hands on </p>
             </div>
            </section>
             <BioDetails/>
@@ -39,6 +40,7 @@ function Homepage() {
             {/*services section*/}
             <section className={styles.serviceSection}>
             <h2 className={styles.serviceTitle}>My Work</h2>
+            <hr/>
              <Carousel/>
             </section>
             
@@ -48,7 +50,8 @@ function Homepage() {
 
             {/*contact section*/}
             <section className={styles.contactSection}>
-                <h2  className={styles.contactTitle}>get in contact</h2>
+                <h2  className={styles.contactTitle}> Contact Me</h2>
+                <hr/>
                 <ContactForm/>
             </section>
 
