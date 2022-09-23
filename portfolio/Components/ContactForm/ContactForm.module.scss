@@ -6,14 +6,16 @@
     padding-left: 1.25em;
     padding-right: 1.25em;
 
-       p{
-        color: white;
-       }
+}
 
-       .inputFields{
-        display: flex;
-        flex-direction: column;
-       }
+.contactDetails{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    p{
+        color: white;
+        margin: auto;
+    }
 }
 
 .input{
@@ -64,7 +66,7 @@
     .form{
         display: flex;
         width: 100%;
-       flex-direction: row;
+      
        align-items: flex-start;
        justify-content: space-around;
 
@@ -76,7 +78,7 @@
         }
        }
 
-       .inputFields{
+       .contactDetails{
         width: 45%;
        }
 
