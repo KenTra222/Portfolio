@@ -25,4 +25,8 @@ new objectives
 
 new objectives
 
-1
+1 add typewriter effect
+
+2. add photo gallery
+
+3. add some animations to site
