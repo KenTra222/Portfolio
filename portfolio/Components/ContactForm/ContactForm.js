@@ -34,12 +34,13 @@ export default function ContactForm() {
   
 
   return (
-    <div>
+    <div className={styles.contactForm}>
         <div className={styles.contactDetails}>
-      <p className={styles.ContactMessage}>
-        Ready to solve a problem? please leave a message and I will gladly reach out withing 1-3 business days. <hr/>
-      <span>or reach me personally @ Kentraviousc@gmail.com</span>
-      </p>
+          <p className={styles.ContactMessage}>
+            Ready to solve a problem? please leave a message and I will gladly reach out withing 1-3 business days. <hr/>
+            <span className={styles.desktopMessage}>Disclaimer: I may not be available during holidays which means I will take a little longer to responds, but rest assured I will reach out to you or your company in a timely fashion.</span>
+          </p>
+          <span>or reach me personally @ my email Kentraviousc@gmail.com</span>
       </div>
 
     <form ref={form} className={styles.form} onSubmit={handleSubmit(onSubmit) && sendEmail}>

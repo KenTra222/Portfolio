@@ -1,21 +1,32 @@
+.contactForm{
+    color: white;
+}
+
 .form{
     margin-top: 2em;
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-left: 1.25em;
-    padding-right: 1.25em;
+   label{
+    margin-bottom:.5em ;
+    text-align: left;
+   }
 
 }
 
+
+
 .contactDetails{
+    width: 100%;
+   
     display: flex;
     flex-direction: column;
     padding: 1em;
-    p{
-        color: white;
-        margin: auto;
+
+    .desktopMessage{
+        display: none;
     }
+   
 }
 
 .input{
@@ -63,15 +74,42 @@
 }
 
 @media (min-width:800px) {
-    .form{
+
+    .contactForm{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+
+        .ContactMessage{
+            margin-top: 2em;
+
+            .desktopMessage{
+                display: block;
+            }
+          
+            span{
+                margin-top: 4em;
+            }
+        }
+        
+        .form{
         display: flex;
         width: 100%;
       
        align-items: flex-start;
        justify-content: space-around;
 
+       label{
+        margin-bottom: .50em;
+       }
+
+       .input, .messageBox{
+        width: 100%;
+       }
+
        p{
-        width: 45%;
+        width: 60%;
 
         span{
             margin-top: 3em;
@@ -81,6 +119,7 @@
        .contactDetails{
         width: 45%;
        }
-
+       
     }   
+}
 }

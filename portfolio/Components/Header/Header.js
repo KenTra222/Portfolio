@@ -22,24 +22,18 @@ const Header = () => {
                      styles.navmenu+""+styles.active
                     }>
         <li className={styles.navitem}>
-          <Link href='/homePage' >
-          <a className={styles.link}>Home</a> 
-          </Link>
+          <a className={styles.link} href='#home'>Home</a> 
         </li>
         <li className={styles.navitem}>
-          <Link href='/about'>
-          <a className={styles.link}>About</a> 
-          </Link>
+          <a className={styles.link} href='#about'>About</a> 
         </li>
-        <li className={styles.navitem}>
-          <Link href='/projects'>
-          <a className={styles.link}>Projects</a> 
-          </Link>
+        
+        <li className={styles.navitem}>      
+          <a className={styles.link} href='#projects' >Projects</a> 
         </li>
-        <li className={styles.navitem}>  
-          <Link href='/contact'>
-          <a className={styles.link}>Contact</a> 
-          </Link>
+
+        <li className={styles.navitem}>         
+          <a className={styles.link} href='#contact'>Contact</a>           
         </li>
       </ul>
 

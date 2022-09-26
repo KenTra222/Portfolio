@@ -5,7 +5,7 @@ function Button(props){
     return(
         <div className={styles.btnContainter}>
             <Link href={props.link}>
-            <button className={styles.btn}>{props.text}</button>
+            <button className={styles.btn} >{props.text}</button>
             </Link> 
         </div>
     )

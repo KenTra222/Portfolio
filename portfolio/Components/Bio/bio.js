@@ -1,5 +1,5 @@
 import styles from './Bio.module.scss'
-import Button from '../buttons/button'
+
 
 function BioDetails(){
     return(
@@ -12,7 +12,6 @@ function BioDetails(){
             Hi! I’m a creative individual with a variety of experience from different backgrounds bringing positive energy and empathy to strengthen relationships with employees and customers. I believes in the power of people to solve problems, and that hard work and perseverance are essential for success.
             </p>
            
-                <Button link='/about' text='See Projects'/> 
             
           </div>
           

@@ -1,30 +1,85 @@
-import React from "react"
+//component import
+import BioDetails from "../Components/Bio/bio"
+import Button from "../Components/buttons/button"
+import Carousel from "../Components/Carousel/carousel"
+import Header from "../Components/Header/Header"
 
-//link for routing
+
+import ContactForm from "../Components/ContactForm/ContactForm"
+
+//link import
 import Link from 'next/link'
 
-//stylesheet for application
-import styles from '../styles/LandingPage.module.scss'
-import Button from "../Components/buttons/button"
+//stylesheet
+import styles from '../styles/Homepage.module.scss'
 
-// markup for the landing page
-function LandingPage(){
-  return(
+function Homepage() {
+    return(
 
-    <div className={styles.landingPageContainer}>
+        <div >
+            <Header/>
+            <div  className={styles.homepageLayout}>
+           
+           
+             {/*hero section*/}
+           <section id="home"  className={styles.heroSection}>
+            
+        
+            <h1 className={styles.heroTitle}>Kentravious V.  Colson<hr/></h1>
+            <div className={styles.heroDetails}>
+            <h3 className={styles.heroRole}>Web Designer x Frontend Dev</h3>
+           
+            <p className={styles.heroTagline}>Conceptualizing creative designs for small and local businesses by researching, planning, designing and building with hands on </p>
+            </div>
+           </section>
 
-    <h1 className={styles.title}>Kentravious  
-    V.
-     Colson</h1>
-    <h3 className={styles.careerRole}>Web Designer <br/> Frontend developer</h3>
-    <div className={styles.btnContainter}>
-  
-  {/*links for navigation*/}
-  <Button link='/contact' text='contact'/>
-  <Button link='/homePage' text='see more'/>
-    </div>
-  </div>
-    )
+           <section id="about">
+            <BioDetails/>
+
+           </section>
+             
+            
+
+            </div>
+            {/*project section*/}
+            <section id="projects" className={styles.projectSection}>
+            <hr/>
+            <h2 className={styles.projectTitle}>My Work</h2>
+             <Carousel/>
+
+             <div class={styles.projectContainer}>
+                <div class={styles.Item1}>
+                    <div>
+                        
+                        <div>
+                        <h3>Gigibite</h3>
+                        <p>description</p>
+                        </div>
+                    </div>
+                </div>
+                <div class={styles.Item2}>Item1</div>
+                <div class={styles.Item3}>Item1</div>
+                <div class={styles.Item4}>Item1</div>
+                <div class={styles.Item5}>Item1</div>
+                <div class={styles.Item6}>Item1</div>
+            </div>
+            </section>
+            
+    
+                
+          
+
+            {/*contact section*/}
+            <section id="contact" className={styles.contactSection}>
+                <hr/>
+                <h2  className={styles.contactTitle}> Contact Me</h2>
+                <ContactForm />
+
+                <img src="../img/sp-staringoff1.jpg"/>
+            </section>
+
+         </div>
+        )
 }
 
-export default LandingPage
+export default Homepage
