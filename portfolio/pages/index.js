@@ -7,8 +7,7 @@ import Header from "../Components/Header/Header"
 
 import ContactForm from "../Components/ContactForm/ContactForm"
 
-//link import
-import Link from 'next/link'
+
 
 //stylesheet
 import styles from '../styles/Homepage.module.scss'
@@ -48,20 +47,36 @@ function Homepage() {
              <Carousel/>
 
              <div class={styles.projectContainer}>
+                    
                 <div class={styles.Item1}>
                     <div>
-                        
+                
                         <div>
                         <h3>Gigibite</h3>
                         <p>description</p>
                         </div>
                     </div>
                 </div>
+                 
+                
                 <div class={styles.Item2}>Item1</div>
+                
+
+                
                 <div class={styles.Item3}>Item1</div>
+                
+
+                
                 <div class={styles.Item4}>Item1</div>
-                <div class={styles.Item5}>Item1</div>
+                
+                
+                <div class={styles.Item5}>Item1</div>                
+                
+                
                 <div class={styles.Item6}>Item1</div>
+                
+                
+                
             </div>
             </section>
             
