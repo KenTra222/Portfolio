@@ -3,10 +3,16 @@ import BioDetails from "../Components/Bio/bio"
 import Button from "../Components/buttons/button"
 import Carousel from "../Components/Carousel/carousel"
 import Header from "../Components/Header/Header"
-
+import Image from 'next/image'
 
 import ContactForm from "../Components/ContactForm/ContactForm"
-
+//pictures import
+import Pic1 from "../img/smokeybanner.jpg"
+import Pic2 from "../img/BITBW.jpg"
+import Pic3 from "../img/zuri_1_original.jpg"
+import Pic4 from "../img/happydollzrus.jpg"
+import Pic5 from "../img/roccstarri.jpg"
+import Pic6 from "../img/make a statement.jpg"
 
 
 //stylesheet
@@ -50,30 +56,38 @@ function Homepage() {
                     
                 <div class={styles.Item1}>
                     <div>
-                
-                        <div>
-                        <h3>Gigibite</h3>
-                        <p>description</p>
-                        </div>
+                         <Image src={Pic1}
+                         layout={"intrinsic"}
+                         width={200}
+                         height={200}
+                         />
+                        
                     </div>
                 </div>
                  
                 
-                <div class={styles.Item2}>Item1</div>
+                <div class={styles.Item2}>
+                    
+                    <Image src={Pic2}/>
+                     </div>
                 
 
                 
-                <div class={styles.Item3}>Item1</div>
+                <div class={styles.Item3}>
+                <Image src={Pic3}/></div>
                 
 
                 
-                <div class={styles.Item4}>Item1</div>
+                <div class={styles.Item4}>
+                <Image src={Pic4}/></div>
                 
                 
-                <div class={styles.Item5}>Item1</div>                
+                <div class={styles.Item5}>
+                <Image src={Pic5}/></div>                
                 
                 
-                <div class={styles.Item6}>Item1</div>
+                <div class={styles.Item6}>
+                <Image src={Pic6}/></div>
                 
                 
                 
