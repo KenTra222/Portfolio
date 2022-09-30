@@ -36,4 +36,10 @@ completed
 3. add some animations to site
 in progress
 
+new objectives
+1. finish responsiveness
+
+2. adjust content
+
+3. add some animations and transitions
 
