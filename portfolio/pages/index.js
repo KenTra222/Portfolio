@@ -1,11 +1,20 @@
+//stylesheet
+import styles from '../styles/Homepage.module.scss'
+
 //component import
+//local
 import BioDetails from "../Components/Bio/bio"
-import Button from "../Components/buttons/button"
 import Carousel from "../Components/Carousel/carousel"
 import Header from "../Components/Header/Header"
 import Image from 'next/image'
-
 import ContactForm from "../Components/ContactForm/ContactForm"
+
+//external
+import {FaFigma, FaHtml5, FaCss3Alt, FaReact, FaWix} from 'react-icons/fa'
+import {TbBrandJavascript} from 'react-icons/tb'
+import Typewriter from 'typewriter-effect'
+
+
 //pictures import
 import Pic1 from "../img/smokeybanner.jpg"
 import Pic2 from "../img/BITBW.jpg"
@@ -13,15 +22,18 @@ import Pic3 from "../img/zuri_1_original.jpg"
 import Pic4 from "../img/happydollzrus.jpg"
 import Pic5 from "../img/roccstarri.jpg"
 import Pic6 from "../img/make a statement.jpg"
+import avatar from '../img/avataaars.png'
 
 
-//stylesheet
-import styles from '../styles/Homepage.module.scss'
+
+
+
 
 function Homepage() {
     return(
 
         <div >
+            
             <Header/>
             <div  className={styles.homepageLayout}>
            
@@ -29,20 +41,50 @@ function Homepage() {
              {/*hero section*/}
            <section id="home"  className={styles.heroSection}>
             
-        
-            <h1 className={styles.heroTitle}>Kentravious V.  Colson<hr/></h1>
+            <div className={styles.heroContainer}>
+
+            <h1 className={styles.heroTitle}>{`<Kentravious Colson/>`}</h1>
             <div className={styles.heroDetails}>
-            <h3 className={styles.heroRole}>Web Designer x Frontend Dev</h3>
+            <h2 className={styles.heroRole}>  
+                <Typewriter
+                options={{
+                    strings: ['UI Designer','Frontend Developer', 'Creative artist', 'Umm Googler?', 'Smoothie Addict '],
+                    autoStart: true,
+                    loop: true,
+                }}
+                />
+                </h2>
            
-            <p className={styles.heroTagline}>Conceptualizing creative designs for small and local businesses by researching, planning, designing and building with hands on </p>
+            <p className={styles.heroTagline}>Conceptualizing creative designs for small and local businesses </p>
             </div>
+                </div>
            </section>
 
-           <section id="about">
-            <BioDetails/>
-
-           </section>
-             
+            <h2 className={styles.skillSet}>My skillset</h2>
+            <ul className={styles.iconList}>
+                <li className={styles.icon}>
+                    <FaFigma/>
+                </li>
+                
+                <li className={styles.icon}>
+                    <FaHtml5/>
+                </li>
+                
+                <li className={styles.icon}>
+                    <FaCss3Alt/>
+                </li>
+                
+                <li className={styles.icon}>
+                    <TbBrandJavascript/>
+                </li>
+                <li className={styles.icon}>
+                    <FaReact/>
+                </li>
+                
+                <li className={styles.icon}>
+                    <FaWix/>
+                </li>
+            </ul>
             
 
             </div>
@@ -50,44 +92,57 @@ function Homepage() {
             <section id="projects" className={styles.projectSection}>
             <hr/>
             <h2 className={styles.projectTitle}>My Work</h2>
-             <Carousel/>
-
+ 
+            <h3>Photo Gallery</h3> 
              <div class={styles.projectContainer}>
-                    
+
+
+                  
                 <div class={styles.Item1}>
-                    <div>
+               
                          <Image src={Pic1}
-                         layout={"intrinsic"}
-                         width={200}
-                         height={200}
-                         />
+                         layout='fill'
+                         objectFit="fill"
+                         />  
                         
-                    </div>
+               
                 </div>
                  
                 
                 <div class={styles.Item2}>
                     
-                    <Image src={Pic2}/>
+                    <Image src={Pic2}
+                        layout='fill'
+                        objectFit="fill"/>
                      </div>
                 
 
                 
                 <div class={styles.Item3}>
-                <Image src={Pic3}/></div>
+                <Image src={Pic3}
+                layout='fill'
+                objectFit="fill"/></div>
                 
 
                 
                 <div class={styles.Item4}>
-                <Image src={Pic4}/></div>
+                <Image src={Pic4}
+                layout='fill'
+                objectFit="fill"/></div>
                 
                 
                 <div class={styles.Item5}>
-                <Image src={Pic5}/></div>                
+                <Image src={Pic5}
+                layout='fill'
+                objectFit="fill"/>
+                </div>                
                 
                 
                 <div class={styles.Item6}>
-                <Image src={Pic6}/></div>
+                <Image src={Pic6}
+                 layout='responsive'
+                 objectFit="fill"/>
+                 </div>
                 
                 
                 
@@ -95,6 +150,10 @@ function Homepage() {
             </section>
             
     
+           <section className={styles.aboutSection} id="about">
+            <BioDetails/>
+
+           </section>
                 
           
 
@@ -104,7 +163,7 @@ function Homepage() {
                 <h2  className={styles.contactTitle}> Contact Me</h2>
                 <ContactForm />
 
-                <img src="../img/sp-staringoff1.jpg"/>
+               
             </section>
 
          </div>

@@ -1,10 +1,12 @@
 
 import styles from './ContactForm.module.scss'
 import { useState, useRef } from 'react';
-
+import Image from 'next/image';
 
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
+
+import avatar from '/img/avataaars.png'
 
 {/*needs to send information to my personal email*/}
 
@@ -37,10 +39,17 @@ export default function ContactForm() {
     <div className={styles.contactForm}>
         <div className={styles.contactDetails}>
           <p className={styles.ContactMessage}>
-            Ready to solve a problem? please leave a message and I will gladly reach out withing 1-3 business days. <hr/>
-            <span className={styles.desktopMessage}>Disclaimer: I may not be available during holidays which means I will take a little longer to responds, but rest assured I will reach out to you or your company in a timely fashion.</span>
-          </p>
+            Ready to solve a problem? please leave a message and I will gladly reach out withing 1-3 business days.
+            </p>
           <span>or reach me personally @ my email Kentraviousc@gmail.com</span>
+          <div className={styles.avatar}>
+            <Image src={avatar}
+            layout="responsive"
+            objectFit='contain'
+            
+            width={100}
+            height={100}/>
+          </div>
       </div>
 
     <form ref={form} className={styles.form} onSubmit={handleSubmit(onSubmit) && sendEmail}>

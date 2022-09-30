@@ -1,18 +1,20 @@
 .header{
       
     
+    
 
     .navBar{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: .75rem 1.25rem;
+        padding: .5rem 2rem;
         
         }
 
     .Logo{
-        width: 7rem;
+        width: 4rem;
         height: auto;
+
         z-index: 3;
     }
 
@@ -25,7 +27,7 @@
 
     .navitem{
         list-style: none;
-        margin-left: 5rem;
+        margin-left: 4rem;
         position: relative;
     }
 
@@ -59,10 +61,10 @@
     
     @media only screen and (max-width: 768px) {
 
-      
-        .Logo{
-            align-self: flex-start;
-            width: 3.5rem;
+        .navBar{
+            .Logo{
+                align-self: flex-start;
+                width: 3.5rem;
         }
 
         .navmenu {
@@ -71,7 +73,7 @@
         top: 5rem;
         flex-direction: column;
         background-color: #fff;
-        width: 100%;
+        width: 100%;    
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
@@ -102,13 +104,13 @@
         visibility: visible;
         
     }
-
-
+    
+    
     .hamburger.active{
         align-self: flex-start;
         margin-top: 2em;
     }
-
+    
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
@@ -124,4 +126,5 @@
     }
 }
 
+}
 }

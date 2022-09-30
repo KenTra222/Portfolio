@@ -3,7 +3,7 @@
 }
 
 .form{
-    margin-top: 2em;
+    margin-top: .25rem;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -22,15 +22,23 @@
     display: flex;
     flex-direction: column;
     padding: 1em;
-
-    .desktopMessage{
-        display: none;
+    span{
+        margin-bottom: 15px;
+    }
+    .avatar{
+        width: 45%;
+        height: auto;
+        position: relative;
+        display: inline-block;
+        margin: auto;
+      
+      
     }
    
 }
 
 .input{
-    margin-bottom: 1em;
+    margin-bottom: .5em;
     border-radius: 8px;
     border: none;
     height: 2.25rem;
@@ -58,50 +66,65 @@
     color: white;
     height: 2.25rem;
     background-color: #E507AC;
-    border-radius: 8px;
+    
+    border-radius: 20px;
     border: none;
     margin-bottom: 1em;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .submitBtn:hover{
     color: #E507AC;
     background-color: white;
+
 }
 
-.contactImage{
-    width: 20px;
-    height: 20px;
-}
 
-@media (min-width:800px) {
+@media (min-width:750px) {
 
     .contactForm{
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
         width: 100%;
+       
 
         .ContactMessage{
-            margin-top: .5em;
-
-            .desktopMessage{
-                display: block;
-                font-size: .7em;
-            }
-          
+            margin-top: 0;
+            font-size: .55rem;
+        }
+        
+        
+       .contactDetails{       
+        align-items: flex-start;
+        justify-content: space-evenly;
+        width: 100%;
+        text-align: left;
+           p{
+            width: 90%;
+            font-size: 1.2rem;
             span{
-                margin-top: 2.25em;
+                margin-top: 3em;
             }
+           }
+
+           .avatar{
+               width: 40%;
+              
+            }
+            
         }
         
         .form{
         display: flex;
-        width: 100%;
-      
-       align-items: flex-start;
-       justify-content: space-around;
+        width: 80%;     
+        align-items: flex-start;
+        justify-content: space-around;
 
        label{
+        margin-top: .5em;
         margin-bottom: .50em;
        }
 
@@ -109,18 +132,10 @@
         width: 100%;
        }
 
-       p{
-        width: 60%;
-
-        span{
-            margin-top: 3em;
-        }
-       }
-
-       .contactDetails{
-        width: 45%;
-       }
-       
+       .submitBtn{
+        width: 25%;
+        border-radius: none;
+       } 
     }   
 }
 }

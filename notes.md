@@ -28,7 +28,7 @@ new objectives
 new objectives
 
 1 add typewriter effect
-in progress
+completed
 
 2. add photo gallery
 completed
