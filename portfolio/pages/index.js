@@ -14,7 +14,6 @@ import {FaFigma, FaHtml5, FaCss3Alt, FaReact, FaWix} from 'react-icons/fa'
 import {TbBrandJavascript} from 'react-icons/tb'
 import Typewriter from 'typewriter-effect'
 
-
 //pictures import
 import Pic1 from "../img/smokeybanner.jpg"
 import Pic2 from "../img/BITBW.jpg"
@@ -22,11 +21,6 @@ import Pic3 from "../img/zuri_1_original.jpg"
 import Pic4 from "../img/happydollzrus.jpg"
 import Pic5 from "../img/roccstarri.jpg"
 import Pic6 from "../img/make a statement.jpg"
-import avatar from '../img/avataaars.png'
-
-
-
-
 
 
 function Homepage() {
@@ -64,26 +58,28 @@ function Homepage() {
             <ul className={styles.iconList}>
                 <li className={styles.icon}>
                     <FaFigma/>
+                    <span className={styles.iconTitle}>Figma</span>
                 </li>
                 
                 <li className={styles.icon}>
                     <FaHtml5/>
+                    <p className={styles.iconTitle}>HTML5</p>
                 </li>
                 
                 <li className={styles.icon}>
                     <FaCss3Alt/>
+                    <p className={styles.iconTitle}>CSS3</p>
                 </li>
                 
                 <li className={styles.icon}>
                     <TbBrandJavascript/>
+                    <p className={styles.iconTitle}>JS</p>
                 </li>
                 <li className={styles.icon}>
                     <FaReact/>
+                    <p className={styles.iconTitle}>React</p>
                 </li>
-                
-                <li className={styles.icon}>
-                    <FaWix/>
-                </li>
+
             </ul>
             
 
@@ -161,9 +157,7 @@ function Homepage() {
             <section id="contact" className={styles.contactSection}>
                 <hr/>
                 <h2  className={styles.contactTitle}> Contact Me</h2>
-                <ContactForm />
-
-               
+                <ContactForm />    
             </section>
 
          </div>

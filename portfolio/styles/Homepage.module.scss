@@ -10,12 +10,8 @@ $secondary-clr:  #E507AC;
  
 }
 
-.heroSection{
-   
-    
-    
-    min-width: 100%;
-    
+.heroSection{ 
+    width: 100%;
     color: $secondary-clr;
     display: flex;
     flex-direction: column;
@@ -69,16 +65,31 @@ $secondary-clr:  #E507AC;
     list-style: none;
     background: rgb(241,223,236);
     background: linear-gradient(156deg, rgba(241,223,236,1) 0%, rgba(215,171,204,1) 35%, rgba(229,7,172,1) 100%);
-    width: 80%;   
-    padding: .5em;
+    width: 90%;   
+    padding: .25em;
     margin: auto;
     border-radius: 20px;
-
+    
+    
     .icon, *{
         width: 2.5em;
     }
+
+    .iconTitle{
+        display: inline-block;
+        font-size: .55rem;
+        text-align: center;
+        margin-left: .5rem;
+        margin-top: 0;
+    }
+
+
 }
 
+
+    .iconList:hover{
+        background: linear-gradient(-156deg, rgba(241,223,236,1) 0%, rgba(215,171,204,1) 35%, rgba(229,7,172,1) 100%);
+    }
 
 
 .projectSection{
@@ -209,6 +220,8 @@ $secondary-clr:  #E507AC;
             }
         }
     }
+
+ 
 
     .projectSection{
 

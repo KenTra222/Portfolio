@@ -12,7 +12,7 @@ const Header = () => {
 
       <nav className={styles.navBar}>
 
-      <Link href='/homePage'>
+      <Link href='/'>
       <img src='/Logo2-removebg.png' alt='' 
       className={styles.Logo}/>
       </Link> 
@@ -24,13 +24,15 @@ const Header = () => {
         <li className={styles.navitem}>
           <a className={styles.link} href='#home'>Home</a> 
         </li>
+
+        <li className={styles.navitem}>      
+          <a className={styles.link} href='#projects' >Projects</a> 
+        </li>
+        
         <li className={styles.navitem}>
           <a className={styles.link} href='#about'>About</a> 
         </li>
         
-        <li className={styles.navitem}>      
-          <a className={styles.link} href='#projects' >Projects</a> 
-        </li>
 
         <li className={styles.navitem}>         
           <a className={styles.link} href='#contact'>Contact</a>           
